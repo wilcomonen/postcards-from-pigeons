@@ -48,30 +48,22 @@ body {
                                    /* offset horizontal: half of text area width */
 }
 
-.overview {
-    background:none; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:5px;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
+#overview {
+    background:gray; /* 170px x 200px */
+    width:100%;                   /* text area width */
     text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+    padding:5px 0px 5px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin: 0px 0px 0px 0px;  /* offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */
 }
-.button {
+#button {
     background:none; /* 170px x 200px */
-    position:fixed;             /* position in the center of the screen */
-    left:50%;
-    top:50px;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
+    width:200px;                   /* text area width */
+	height: 20px;
     text-align:center;
-	position: fixed;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+	position: none;
+    padding:18px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    display: inline-block;                        
 }
 
 li {
@@ -97,20 +89,14 @@ h2 {
 	font-family: didot;
     font-size:20px;
     font-weight:bold;
-    margin-top: 15px;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
 	color: blue;
 }
 h3 {
 	font-family: didot;
-    font-size:20px;
+    font-size:15px;
+    margin-top: 5px;
     font-weight:bold;
-    margin-top: 15px;
-	padding:0px;
-    text-align:center;
-	color: blue;
+	color: red;
 }
 
 .event {
@@ -123,12 +109,12 @@ h3 {
 }
 
 .event.listening {
-    background-color:#333333;
+    background-color:gray;
     display:block;
 }
 
 .event.received {
-    background-color:#4B946A;
+    background-color:red;
     display:none;
 }
 
