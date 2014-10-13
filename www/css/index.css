@@ -52,7 +52,7 @@ body {
     background:none; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
     left:50%;
-    top:5 px;
+    top:5px;
     height:50px;                   /* text area height */
     width:225px;                   /* text area width */
     text-align:center;
@@ -64,7 +64,7 @@ body {
     background:none; /* 170px x 200px */
     position:fixed;             /* position in the center of the screen */
     left:50%;
-    top:50 px;
+    top:50px;
     height:50px;                   /* text area height */
     width:225px;                   /* text area width */
     text-align:center;
