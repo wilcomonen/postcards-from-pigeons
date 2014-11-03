@@ -17,3 +17,9 @@ var initialize = function() {
     // run the function `showReady`
     document.addEventListener('deviceready', showReady, false);
 }
+
+$("#buy-pigeon").click(function() {
+	console.log("clicked on buy pigeon");
+	$(".view#start-view").removeClass("active");
+	$(".view#my-pigeon-view").addClass("active");
+});

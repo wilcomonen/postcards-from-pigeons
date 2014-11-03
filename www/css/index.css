@@ -25,38 +25,52 @@ body {
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
     background-attachment:fixed;
-    font-family: Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
     width:100%;
-	background-color: #202020;
 }
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo2.png) no-repeat center top; /* 170px x 200px */
+    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
     left:50%;
-    top:50%;
+    top:40%;
     height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
-    text-align:center;
+    width:300px;                   /* text area width */
+    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+.map{
     padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
     margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */
 }
 
-#overview {
-    background:#e77471; /* 170px x 200px */
-    width:100%;                   /* text area width */
-    text-align:center;
-    padding:5px 0px 5px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin: 0px 0px 0px 0px;  /* offset vertical: half of image height and text area height */
+.header {
+    position:absolute;             /* position in the center of the screen */
+    left:50%;
+	top: -70px;
+    height:50px;                   /* text area height */
+    width:300px;                   /* text area width */
+    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */
 }
+#buy_start{
+    position:absolute;             /* position in the center of the screen */
+    left:50%;
+	top: 50%;
+    height:100px;                   /* text area height */
+    width:200px;                   /* text area width */
+    padding:100px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-115px 0px 0px -90px;  /* offset vertical: half of image height and text area height */
+       
+}
+
 #button {
     background:none; /* 170px x 200px */
     width:200px;                   /* text area width */
@@ -69,66 +83,45 @@ body {
 
 li {
     list-style: none;
+	
 }
 
 a, a:hover, a:visited, a:active {
-    color: white;
+    color: #E55451;
+	text-decoration: none	
 }
 
 h1 {
-    font-size:20px;
+	font-family: garamond;
+    font-size:60px;
     font-weight:bold;
     margin-top: 20px;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
-	color: black;
+	color: #E55451;
+	text-transform:uppercase;
 }
 
 h2 {
-    font-size:20px;
-    font-weight:bold;
-	color: white;
+	font-family: helvetica;
+    font-size:28px;
+    font-weight:normal;
+	margin-top: -55px;
+	color: #2B65EC;
+	background-color: none;
 }
 h3 {
-    font-size:15px;
-    margin-top: 5px;
+	background-color: #2B65EC;
+	font-family: garamond;
+    font-size:40px;
     font-weight:bold;
-	color: #e77471;
+    margin-top: 5px;
+	text-align: center;
+	color: white;
+	text-transform:uppercase;
 }
 
-.event {
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
+.view {
+	display: none;
 }
-
-.event.listening {
-    background-color:gray;
-    display:block;
-}
-
-.event.received {
-    background-color:red;
-    display:none;
-}
-
-@keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
-}
- 
-@-webkit-keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
-}
- 
-.blink {
-    animation:fade 3000ms infinite;
-    -webkit-animation:fade 3000ms infinite;
+.view.active {
+	display: inherit;
 }
