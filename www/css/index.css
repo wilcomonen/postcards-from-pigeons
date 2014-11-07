@@ -57,9 +57,30 @@ body {
     height:50px;                   /* text area height */
     width:300px;                   /* text area width */
     padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */                                   /* offset horizontal: half of text area width */
 }
+.main_nav{
+	position: absolute;
+	bottom: 10px;	
+	left: 50%;
+	text-align: center;
+	width: 300px;
+	padding: 0 0 0 0;
+	 margin:-115px 0px 0px -152px;  
+}
+.nav{
+    position:relative;
+	float:left;;
+    left: 0;
+    height:15px;                   /* text area height */
+    width: 25%;                   /* text area width */
+    padding:0px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:0px 0px 0px 0px;  /* offset vertical: half of image height and text area height */ 
+	font-family: helvetica;
+	color: #2B65EC;
+}
+
+
 #buy_start{
     position:absolute;             /* position in the center of the screen */
     left:50%;
@@ -72,7 +93,7 @@ body {
 }
 
 #button {
-    background:none; /* 170px x 200px */
+    background:fixed; /* 170px x 200px */
     width:200px;                   /* text area width */
 	height: 20px;
     text-align:center;
@@ -82,8 +103,7 @@ body {
 }
 
 li {
-    list-style: none;
-	
+	list-style: none;
 }
 
 a, a:hover, a:visited, a:active {
@@ -118,6 +138,7 @@ h3 {
 	color: white;
 	text-transform:uppercase;
 }
+
 
 .view {
 	display: none;
